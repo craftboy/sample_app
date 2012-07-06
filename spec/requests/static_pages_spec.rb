@@ -21,7 +21,7 @@ describe "Static Pages" do
 
   it "should have the h1 'Help'" do
     visit '/static_pages/help'
-    pages.should have_selector('h1', :text => 'Help')
+    page.should have_selector('h1', :text => 'Help')
   end
 end
 
@@ -33,7 +33,7 @@ describe "About Page" do
 
   it "should have the h1 'About Us'" do
     visit '/static_pages/about'
-    pages.should have_selector('h1', :text => 'About Us')
+    page.should have_selector('h1', :text => 'About Us')
   end
 end
 
